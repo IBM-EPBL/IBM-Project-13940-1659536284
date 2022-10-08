@@ -1,1 +1,55 @@
+void setup()
+{
+pinMode(11, OUTPUT);
+pinMode(12, OUTPUT);
+pinMode(13, OUTPUT);
+pinMode(2,INPUT);
+pinMode(3, OUTPUT);
+pinMode(4,INPUT);
+Serial.begin(1000);
+}
+void loop()
+{
+int a=digitalRead(4);
+if(a)
+{
+
+digitalWrite(11,HIGH);
+
+delay(5000);
+Serial.println("\n\nmotion in the room,lights is ON");
+}
+else
+{
+digitalWrite(11,LOW);
+
+Serial.println("\n\nNo motion,light is OFF");
+}
+
+digitalWrite(3,LOW);
+digitalWrite(3,HIGH);
+delayMicroseconds(5);
+digitalWrite(3,LOW);
+float p=pulseIn(2,HIGH);
+float d=(p*0.0343)/2;
+if(d<50)
+{
+tone(12,500);
+
+Serial.println("\n\nThe Water Tank is full");
+}
+else if (d>250)
+{
+noTone(12);
+digitalWrite(13,HIGH);
+
+Serial.println("\n\nThe Water Tank is empty");
+}
+else
+{
+noTone(12);
+digitalWrite(13,LOW);
+Serial.println("\n\nThere is Water in the water Tank");
+}
+}
 
