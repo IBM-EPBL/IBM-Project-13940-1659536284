@@ -1,1 +1,22 @@
-
+import random
+def tempMonitor():
+ Min_t=13
+ Max_t=27
+ Min_h=40
+ Max_h=60
+ temp = random.randint(14,26)
+ humidity = random.randint(29,51)
+ if ((temp>=Min_t)and(temp<=Max_t) and (humidity>=Min_h) and (humidity<=Max_h)):
+   print("Temperature and Humidity is optimum")
+   tempMonitor()
+ else:
+   if(temp<Min_t):
+     print("Temperature is too Cold:"+ str(temp))
+   if(humidity<Min_h):
+     print("Humidity is too Low:"+ str(humidity))
+   if(temp>Max_t):
+     print("ALERT : Temperature is too Hot:"+ str(temp))
+   if(humidity>Max_h):
+     print("ALERT : Humidity is too High:"+ str(humidity))
+ return
+tempMonitor()
