@@ -1,9 +1,9 @@
 # IBM-Project-13940-1659536284
 SmartFarmer - IoT Enabled Smart Farming Application
 
-Category - Internet Of Things
+Category : Internet Of Things
 
-Skills Required - Python,IBM Cloud,IBM IoT Platform,IBM Nodered,IBM Cloudant DB
+Skills Required : Python,IBM Cloud,IBM IoT Platform,IBM Nodered,IBM Cloudant DB.
 
 Project Description:
 
