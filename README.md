@@ -11,3 +11,4 @@ IoT-based agriculture system helps the farmer in monitoring different parameters
 Farmers can monitor all the sensor parameters by using a web or mobile application even if the farmer is not near his field. Watering the crop is one of the important tasks for the farmers. They can make the decision whether to water the crop or postpone it by monitoring the sensor parameters and controlling the motor pumps from the mobile application itself.
 
 Technical Architecture:
+![image](https://user-images.githubusercontent.com/114061973/200007676-68a0b537-7f05-4b69-b7c1-409211812249.png)
